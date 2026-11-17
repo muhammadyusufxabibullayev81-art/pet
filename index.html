@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="loader">
+    <div class="loader-circle"></div>
+    <h2>PET WORLD</h2>
+    <p>Hayvonlar olamiga xush kelibsiz</p>
+</div>
+
+<header>
+    <a href="#home" class="logo">PET<span>WORLD</span></a>
+
+    <nav>
+        <a href="#home">Bosh sahifa</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#pets">Hayvonlar</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#shop">Do‘kon</a>
+        <a href="#contact">Aloqa</a>
+    </nav>
+
+    <button class="cart-open">
+        Savat <span class="cart-count">0</span>
+    </button>
+</header>
+
+<div class="cart-overlay"></div>
+
+<div class="cart-panel">
+    <div class="cart-header">
+        <h2>Savatingiz</h2>
+        <button class="cart-close">×</button>
+    </div>
+
+    <div class="cart-items">
+        <p class="empty-cart">Savatingiz hozircha bo‘sh</p>
+    </div>
+
+    <div class="cart-footer">
+        <h3>Jami: <span class="total-price">0</span> so‘m</h3>
+        <button class="checkout-btn">Buyurtma berish</button>
+        <p class="checkout-message"></p>
+    </div>
+</div>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="small-title">HAYVONLAR BIZNING DO‘STLARIMIZ</span>
+        <h1>Uyingizga yangi <span>do‘st</span> olib keling</h1>
+        <p>Har bir hayvon mehr va e'tiborga loyiq. O‘zingizga mos eng yaxshi do‘stni biz bilan toping.</p>
+
+        <div class="hero-buttons">
+            <a href="#pets" class="main-btn">Hayvonlarni ko‘rish</a>
+            <a href="#about" class="second-btn">Batafsil ma'lumot</a>
+        </div>
+
+        <div class="hero-info">
+            <div>
+                <h2>500+</h2>
+                <p>Baxtli oilalar</p>
+            </div>
+            <div>
+                <h2>120+</h2>
+                <p>Hayvonlar</p>
+            </div>
+            <div>
+                <h2>15+</h2>
+                <p>Mutaxassislar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1200&auto=format&fit=crop&q=90" alt="It">
+        <div class="floating-card">
+            <h3>Eng yaxshi do‘st</h3>
+            <p>Mehr bilan tanlang</p>
+        </div>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=1000&auto=format&fit=crop&q=90" alt="Uy hayvoni">
+        <div class="experience">
+            <h2>10+</h2>
+            <p>Yillik tajriba</p>
+        </div>
+    </div>
+
+    <div class="about-content">
+        <span class="small-title">BIZ HAQIMIZDA</span>
+        <h2>Har bir hayvon mehrga loyiq</h2>
+        <p>Pet World — uy hayvonlarini sevuvchilar uchun yaratilgan maxsus platforma. Biz hayvonlarga mehribon oilalarni topishga yordam beramiz.</p>
+
+        <div class="about-feature">
+            <div class="feature-number">01</div>
+            <div>
+                <h3>Ishonchli yordam</h3>
+                <p>Har bir hayvon haqida kerakli ma'lumotlar.</p>
+            </div>
+        </div>
+
+        <div class="about-feature">
+            <div class="feature-number">02</div>
+            <div>
+                <h3>Sog‘lom hayvonlar</h3>
+                <p>Hayvonlarning salomatligi biz uchun muhim.</p>
+            </div>
+        </div>
+
+        <div class="about-feature">
+            <div class="feature-number">03</div>
+            <div>
+                <h3>Mehribon oilalar</h3>
+                <p>Hayvonlarga munosib uy topishda yordam.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pets section" id="pets">
+    <div class="section-heading">
+        <span class="small-title">BIZNING HAYVONLARIMIZ</span>
+        <h2>O‘zingizga mos do‘stni tanlang</h2>
+        <p>Yangi do‘stingiz sizni kutmoqda.</p>
+    </div>
+
+    <div class="pet-filter">
+        <button class="filter-btn active" data-filter="all">Barchasi</button>
+        <button class="filter-btn" data-filter="it">Itlar</button>
+        <button class="filter-btn" data-filter="mushuk">Mushuklar</button>
+        <button class="filter-btn" data-filter="qush">Qushlar</button>
+    </div>
+
+    <div class="pet-grid">
+        <div class="pet-card" data-category="it">
+            <div class="pet-img"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&auto=format&fit=crop&q=90" alt="Golden Retriever"></div>
+            <div class="pet-details">
+                <span>Itlar</span>
+                <h3>Golden Retriever</h3>
+                <p>Yoshi: 2 yosh</p>
+                <div class="pet-bottom"><strong>Yangi do‘st</strong><button class="pet-btn">Tanlash</button></div>
+            </div>
+        </div>
+
+        <div class="pet-card" data-category="mushuk">
+            <div class="pet-img"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=800&auto=format&fit=crop&q=90" alt="British Shorthair"></div>
+            <div class="pet-details">
+                <span>Mushuklar</span>
+                <h3>British Shorthair</h3>
+                <p>Yoshi: 1 yosh</p>
+                <div class="pet-bottom"><strong>Yangi do‘st</strong><button class="pet-btn">Tanlash</button></div>
+            </div>
+        </div>
+
+        <div class="pet-card" data-category="it">
+            <div class="pet-img"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&auto=format&fit=crop&q=90" alt="Labrador"></div>
+            <div class="pet-details">
+                <span>Itlar</span>
+                <h3>Labrador</h3>
+                <p>Yoshi: 3 yosh</p>
+                <div class="pet-bottom"><strong>Yangi do‘st</strong><button class="pet-btn">Tanlash</button></div>
+            </div>
+        </div>
+
+        <div class="pet-card" data-category="mushuk">
+            <div class="pet-img"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&auto=format&fit=crop&q=90" alt="Persian Cat"></div>
+            <div class="pet-details">
+                <span>Mushuklar</span>
+                <h3>Persian Cat</h3>
+                <p>Yoshi: 2 yosh</p>
+                <div class="pet-bottom"><strong>Yangi do‘st</strong><button class="pet-btn">Tanlash</button></div>
+            </div>
+        </div>
+
+        <div class="pet-card" data-category="qush">
+            <div class="pet-img"><img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=800&auto=format&fit=crop&q=90" alt="To‘tiqush"></div>
+            <div class="pet-details">
+                <span>Qushlar</span>
+                <h3>To‘tiqush</h3>
+                <p>Yoshi: 1 yosh</p>
+                <div class="pet-bottom"><strong>Yangi do‘st</strong><button class="pet-btn">Tanlash</button></div>
+            </div>
+        </div>
+
+        <div class="pet-card" data-category="it">
+            <div class="pet-img"><img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=800&auto=format&fit=crop&q=90" alt="Husky"></div>
+            <div class="pet-details">
+                <span>Itlar</span>
+                <h3>Husky</h3>
+                <p>Yoshi: 2 yosh</p>
+                <div class="pet-bottom"><strong>Yangi do‘st</strong><button class="pet-btn">Tanlash</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="banner-content">
+        <span>YANGI HAYOT BOSHLANADI</span>
+        <h2>Bir hayotga mehr bering, ming quvonch oling</h2>
+        <p>Har bir hayvonning baxtli yashashga haqqi bor.</p>
+        <a href="#contact">Biz bilan bog‘laning</a>
+    </div>
+</section>
+
+<section class="services section" id="services">
+    <div class="section-heading">
+        <span class="small-title">BIZNING XIZMATLAR</span>
+        <h2>Hayvonlaringiz uchun barcha imkoniyatlar</h2>
+        <p>Ularning sog‘lom va baxtli hayoti uchun.</p>
+    </div>
+
+    <div class="service-grid">
+        <div class="service-card">
+            <div class="service-icon">01</div>
+            <h3>Veterinar xizmati</h3>
+            <p>Hayvonlaringiz salomatligini nazorat qilish va maslahatlar.</p>
+            <a href="#contact">Batafsil</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">02</div>
+            <h3>Parvarish qilish</h3>
+            <p>Tozalik, jun parvarishi va kundalik gigiyena xizmatlari.</p>
+            <a href="#contact">Batafsil</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">03</div>
+            <h3>Hayvon asrab olish</h3>
+            <p>O‘zingizga mos hayvonni tanlang va unga yangi uy bering.</p>
+            <a href="#pets">Batafsil</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">04</div>
+            <h3>Maslahatlar</h3>
+            <p>Uy hayvonlarini tarbiyalash va to‘g‘ri boqish bo‘yicha yordam.</p>
+            <a href="#contact">Batafsil</a>
+        </div>
+    </div>
+</section>
+
+<section class="shop section" id="shop">
+    <div class="section-heading">
+        <span class="small-title">PET SHOP</span>
+        <h2>Hayvonlaringiz uchun mahsulotlar</h2>
+        <p>Eng kerakli mahsulotlarni bir joydan toping.</p>
+    </div>
+
+    <div class="shop-grid">
+        <div class="shop-card">
+            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=700&auto=format&fit=crop&q=90" alt="Premium yem">
+            <div class="shop-info">
+                <h3>Premium yem</h3>
+                <p>Itlar uchun sifatli oziqa</p>
+                <div class="shop-price">85 000 so‘m</div>
+                <button class="buy-btn">Savatga qo‘shish</button>
+            </div>
+        </div>
+
+        <div class="shop-card">
+            <img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=700&auto=format&fit=crop&q=90" alt="O‘yinchoq">
+            <div class="shop-info">
+                <h3>O‘yinchoq</h3>
+                <p>Hayvonlar uchun o‘yinchoq</p>
+                <div class="shop-price">45 000 so‘m</div>
+                <button class="buy-btn">Savatga qo‘shish</button>
+            </div>
+        </div>
+
+        <div class="shop-card">
+            <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?w=700&auto=format&fit=crop&q=90" alt="Parvarish to‘plami">
+            <div class="shop-info">
+                <h3>Parvarish to‘plami</h3>
+                <p>Kundalik parvarish uchun</p>
+                <div class="shop-price">120 000 so‘m</div>
+                <button class="buy-btn">Savatga qo‘shish</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery section">
+    <div class="section-heading">
+        <span class="small-title">FOTOGALEREYA</span>
+        <h2>Bizning yoqimli do‘stlarimiz</h2>
+        <p>Hayvonlar olamidagi go‘zal lahzalar.</p>
+    </div>
+
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=800&auto=format&fit=crop&q=90" alt="Mushuk">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=800&auto=format&fit=crop&q=90" alt="It">
+        <img src="https://images.unsplash.com/photo-1522858547137-f1dcec554f55?w=800&auto=format&fit=crop&q=90" alt="Qush">
+        <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=800&auto=format&fit=crop&q=90" alt="Mushuk">
+    </div>
+</section>
+
+<section class="reviews section">
+    <div class="section-heading">
+        <span class="small-title">MIJOZLAR FIKRI</span>
+        <h2>Biz haqimizda nima deyishadi?</h2>
+    </div>
+
+    <div class="review-grid">
+        <div class="review-card">
+            <p>Pet World orqali o‘zimga juda yoqimli mushuk topdim. Xizmat juda yaxshi.</p>
+            <h3>Madina A.</h3>
+            <span>Mamnun mijoz</span>
+        </div>
+        <div class="review-card">
+            <p>Bu sayt orqali oilamizga yangi do‘st topdik. Barchaga tavsiya qilaman.</p>
+            <h3>Azizbek R.</h3>
+            <span>Mamnun mijoz</span>
+        </div>
+        <div class="review-card">
+            <p>Hayvonlar haqidagi ma'lumotlar va xizmatlar juda foydali ekan.</p>
+            <h3>Shahnoza K.</h3>
+            <span>Mamnun mijoz</span>
+        </div>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <div class="contact-info">
+        <span class="small-title">BIZ BILAN BOG‘LANING</span>
+        <h2>Savollaringiz bormi?</h2>
+        <p>Bizga xabar yuboring. Sizga yordam berishdan xursandmiz.</p>
+
+        <div class="contact-item">
+            <h3>Telefon</h3>
+            <p>+998 90 123 45 67</p>
+        </div>
+        <div class="contact-item">
+            <h3>Email</h3>
+            <p>info@petworld.uz</p>
+        </div>
+        <div class="contact-item">
+            <h3>Manzil</h3>
+            <p>Toshkent, O‘zbekiston</p>
+        </div>
+    </div>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Ismingiz" required>
+        <input type="email" placeholder="Email manzilingiz" required>
+        <input type="text" placeholder="Mavzu">
+        <textarea placeholder="Xabaringiz..." required></textarea>
+        <button type="submit">Xabar yuborish</button>
+        <p class="form-message"></p>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-top">
+        <div>
+            <a href="#home" class="logo">PET<span>WORLD</span></a>
+            <p>Har bir hayvon mehr va baxtga loyiq.</p>
+        </div>
+        <div>
+            <h3>Sahifalar</h3>
+            <a href="#home">Bosh sahifa</a>
+            <a href="#about">Biz haqimizda</a>
+            <a href="#pets">Hayvonlar</a>
+        </div>
+        <div>
+            <h3>Xizmatlar</h3>
+            <a href="#services">Veterinar</a>
+            <a href="#services">Parvarish</a>
+            <a href="#shop">Do‘kon</a>
+        </div>
+        <div>
+            <h3>Aloqa</h3>
+            <a href="#contact">Telefon</a>
+            <a href="#contact">Email</a>
+            <a href="#contact">Manzil</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 PET WORLD. Barcha huquqlar himoyalangan.</p>
+        <p>Hayvonlarga mehr bilan.</p>
+    </div>
+</footer>
+
+<button class="top-btn">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
